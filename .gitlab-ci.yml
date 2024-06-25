@@ -39,7 +39,7 @@ docker-build:
     - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
   script:
     - DRAGONWELL_VERSION=21-anolis
-    - MVND_VERSION=1.0.0
+    - MVND_VERSION=1.0.1
     - MVND_TAG=$MVND_VERSION-dragonwell-$DRAGONWELL_VERSION
     - >-
       docker build
